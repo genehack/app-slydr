@@ -16,6 +16,8 @@
         theme: "google" ,
         lineNumbers: false
       });
+      var minSlide = [% meta.min %];
+      var maxSlide = [% meta.max %];
     </script>
     <style type="text/css">
       <!--

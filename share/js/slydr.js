@@ -1,5 +1,3 @@
-var minSlide = 1;
-var maxSlide = 12;
 var curSlide = 1;
 
 function hideAll () {
