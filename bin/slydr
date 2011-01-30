@@ -1,0 +1,15 @@
+#! /opt/perl/bin/perl
+
+# ABSTRACT: Templated-based presentation builder
+# PODNAME: slydr
+
+use strictures 1;
+use Modern::Perl;
+
+use FindBin;
+use lib "$FindBin::RealBin/../lib";
+
+use App::Slydr;
+App::Slydr->run;
+
+1;
