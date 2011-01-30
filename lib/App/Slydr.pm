@@ -1,7 +1,12 @@
 package App::Slydr;
+use Moose;
+extends 'MooseX::App::Cmd';
+# ABSTRACT: Templated-based presentation builder.
 
-use strict;
-use warnings;
-use 5.010;
+=head1 SYNOPSIS
+
+See C<perldoc syldr> for usage information.
+
+=cut
 
 1;
