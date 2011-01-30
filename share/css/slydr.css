@@ -1,0 +1,122 @@
+/*
+
+  stolen^Wborrowed from librarian.net/talks/mla/mla.css -- reformatted and tweaked and otherwise altered.
+
+  original comments:
+	------
+	my own personal powerpoint emulator. why? see: http://www.aaronsw.com/weblog/000931
+
+	This stylesheet is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License.
+	To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.0/
+	or send a letter to
+
+	Creative Commons
+	559 Nathan Abbott Way
+	Stanford, California 94305, USA.
+	------
+*/
+
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color : #CCCCCC;
+}
+
+cite {
+    font-size: x-small;
+    font-style: italic;
+    text-align: right;
+}
+
+A { text-decoration: underline; }
+
+A:visited {
+    color: #F90;
+    text-decoration: none;
+}
+
+A:link {
+    color: #F00;
+    text-decoration: none;
+}
+
+A:active {
+    color: #6C0;
+    text-decoration: none;
+}
+
+A:hover	{
+    color: #603;
+    background:#FF6;
+    text-decoration: none;
+}
+
+.slide {
+    width:860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #ffffff;
+    text-align:left;
+    border: 1px solid;
+}
+
+.content {
+    width:860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #ffffff;
+    text-align:left;
+    border: 1px solid;
+}
+
+.center { text-align: center; }
+.right  { text-align: right; }
+
+.blue  { color: blue; }
+.green { color: green; }
+
+ul { padding-left: 20px; }
+
+li{
+    padding-bottom:2px;
+    padding-top:2px;
+}
+
+h2, h3, h4 {
+    color: #F03C00;
+    font-weight: bold;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+img { border: 0px; }
+
+.quote {
+    font-family: "Times New Roman", Times, serif;
+    color: #360;
+    margin-left : 15px;
+}
+
+.next {
+    font-size: 12px;
+    color:#b6bfb0;
+}
+
+.credit {
+    font-size: 12px;
+    font-style: italic;
+    color: #898866;
+}
+
+code { font-family: Consolas,"Andale Mono",monospace; }
+pre {
+    background: #eee;
+    padding: 10px;
+    border: 1px black solid;
+    font-family: Consolas,"Andale Mono",monospace;
+}
+
+.strikeout { text-decoration: line-through; }

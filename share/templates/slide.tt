@@ -1,0 +1,12 @@
+<a name="[% slide.n %]"></a>
+<div class=slide id=slide[% slide.n %]>
+  [% IF slide.title %]
+  <div class="center">
+    <h2>[% slide.title | markdown %]</h2>
+  </div>
+  [% END %]
+
+  [% slide.content | markdown %]
+
+</div>
+<!-- /[% slide.n %] -->
