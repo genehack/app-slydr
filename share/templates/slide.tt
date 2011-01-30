@@ -1,4 +1,4 @@
-<a name="[% slide.n %]"></a>
+<a name="[% slide.n %]"></a> [% USE Markdown %]
 <div class=slide id=slide[% slide.n %]>
   [% IF slide.title %]
   <div class="center">

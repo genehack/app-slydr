@@ -32,7 +32,6 @@
     </style>
   </head>
   <body>
-[% USE Markdown %]
 [% slide FOREACH slide IN slides %]
     <script type=text/javascript src=./js/slydr.js></script>
   </body>
