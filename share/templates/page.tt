@@ -18,6 +18,7 @@
       });
       var minSlide = [% meta.min %];
       var maxSlide = [% meta.max %];
+      $(".slides:last-child").css({ page-break-after: "never" });
     </script>
     <style type="text/css">
       <!--
@@ -26,13 +27,16 @@
           border: 0px;
           display: block !important;
           margin-bottom: 10px;
+          page-break-after: always;
         }
       }
       -->
     </style>
   </head>
   <body>
+    <div id=slides>
 [% slide FOREACH slide IN slides %]
+    </div>
     <script type=text/javascript src=./js/slydr.js></script>
   </body>
 </html>
