@@ -4,6 +4,10 @@ function hideAll () {
   $('.slide').hide();
 }
 
+function showAll () {
+  $('.slide').show();
+}
+
 function show_slide (id) {
   var curSlideId = get_slide_id(id);
   $(curSlideId).show();
@@ -60,6 +64,19 @@ $(window).jkey( '9,>' , function() {
   slide_up_slide(curSlide);
   curSlide = maxSlide;
   slide_down_slide(curSlide);
+});
+
+var showAllToggle = false;
+$(window).jkey( 's' , function() {
+  if( showAllToggle ) {
+    hideAll();
+    show_slide(curSlide);
+    showAllToggle = false;
+  }
+  else {
+    showAll();
+    showAllToggle = true;
+  }
 });
 
 $(document).ready( function () {
