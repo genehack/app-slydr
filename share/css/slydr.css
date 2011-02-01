@@ -112,6 +112,8 @@ img { border: 0px; }
 }
 
 code { font-family: Consolas,"Andale Mono",monospace; }
+code.prettyprint { border: 0px; }
+
 pre {
     background: #eee;
     padding: 10px;
