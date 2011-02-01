@@ -185,6 +185,8 @@ sub _prep_slides {
 
     $slide->{n} = $_;
 
+    $slide->{content} = _process_content( \( $slide->{content} ) , {} );
+
     $slides[$_] = _process_content( \$slide_tmpl , { meta => $meta , slide => $slide });
   }
 
