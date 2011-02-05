@@ -49,6 +49,8 @@ has 'verbose' => (
   traits      => [qw/ Getopt /],
 );
 
+sub command_names { qw/ publish pub / }
+
 sub execute {
   my( $self , $options , $args ) = @_;
 
