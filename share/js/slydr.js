@@ -35,6 +35,7 @@ function slide_forward() {
   slide_up_slide(curSlide);
   curSlide = curSlide + 1;
   slide_down_slide(curSlide);
+  $(window).scrollTop(0);
 }
 
 function slide_backward() {
@@ -44,6 +45,7 @@ function slide_backward() {
   slide_up_slide(curSlide);
   curSlide = curSlide - 1;
   slide_down_slide(curSlide);
+  $(window).scrollTop(0);
 }
 
 $(window).jkey( 'right,j,down,return' , function() {
