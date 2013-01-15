@@ -2,7 +2,7 @@ package App::Slydr::Command::publish;
 # ABSTRACT: Publish your presentation into HTML
 
 use Moose;
-extends 'MooseX::App::Cmd::Command';
+extends 'App::Slydr::Command';
 
 use strictures 1;
 use feature 'state';
@@ -19,22 +19,6 @@ use Template;
 use Try::Tiny;
 use YAML              qw/ LoadFile  /;
 
-has 'input_dir' => (
-  is          => 'rw' ,
-  isa         => 'Str' ,
-  cmd_aliases => 'i' ,
-  traits      => [ qw/ Getopt / ],
-  default     => './input' ,
-);
-
-has 'output_dir' => (
-  is          => 'rw' ,
-  isa         => 'Str' ,
-  cmd_aliases => 'o' ,
-  traits      => [ qw/ Getopt / ],
-  default     => './output' ,
-);
-
 has 'publish_all' => (
   is          => 'ro',
   isa         => 'Bool',
@@ -42,16 +26,9 @@ has 'publish_all' => (
   traits      => [qw/ Getopt /],
 );
 
-has 'verbose' => (
-  is          => 'ro',
-  isa         => 'Bool',
-  cmd_aliases => 'v',
-  traits      => [qw/ Getopt /],
-);
-
 sub command_names { qw/ publish pub / }
 
-sub execute {
+sub _run {
   my( $self , $options , $args ) = @_;
 
   unless ( -d $self->input_dir ) {
@@ -232,4 +209,3 @@ sub _slurp_file {
 
 __PACKAGE__->meta->make_immutable;
 1;
-

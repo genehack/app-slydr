@@ -2,7 +2,7 @@ package App::Slydr::Command::new;
 # ABSTRACT: create a new slydr presentation
 
 use Moose;
-extends 'MooseX::App::Cmd::Command';
+extends 'App::Slydr::Command';
 
 use strictures 1;
 use Modern::Perl;
@@ -12,7 +12,7 @@ use File::Path qw/ make_path /;
 use File::ShareDir qw/ dist_file /;
 use Try::Tiny;
 
-sub execute {
+sub _run {
   my( $self , $options , $args ) = @_;
 
   my $name = shift @$args
