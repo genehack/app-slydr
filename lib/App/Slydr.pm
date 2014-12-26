@@ -5,7 +5,7 @@ extends 'MooseX::App::Cmd';
 
 =head1 SYNOPSIS
 
-See C<perldoc syldr> for usage information.
+See C<perldoc slydr> for usage information.
 
 =cut
 
